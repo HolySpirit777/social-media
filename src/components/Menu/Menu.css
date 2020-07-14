@@ -1,0 +1,20 @@
+.menu-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu-nav-element {
+    float: left;
+}
+
+.menu-nav-link {
+    display: block;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    padding: 17px 18px;
+    text-decoration: none;
+}
