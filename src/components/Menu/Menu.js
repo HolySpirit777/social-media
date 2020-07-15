@@ -9,7 +9,7 @@ import {
 
 const Menu = () => {
     return (
-        <div>
+        <div className="menu">
             <ul className="menu-nav">
                 <li className="menu-nav-element"><a className="menu-nav-link" href="#">Posts</a> </li>
                 <li className="menu-nav-element"><a className="menu-nav-link" href="#">Profile</a></li>
