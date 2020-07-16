@@ -15,9 +15,12 @@
 
 .profile-options-element {
     display: inline-block;
+    cursor: pointer;
+
 }
 
 
 .profile-options-element:hover {
     background: gray;
 }
+

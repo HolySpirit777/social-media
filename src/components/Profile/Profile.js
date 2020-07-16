@@ -7,6 +7,11 @@ import {
     Link
   } from "react-router-dom";
 
+import Followers from './Followers/Followers';
+import MyPosts from './My Posts/MyPosts';
+import Myself from './Myself/Myself';
+import Following from './Following/Following';
+
 const Profile = (props) => {
     return (
         <div>
@@ -16,28 +21,34 @@ const Profile = (props) => {
             <Router>
       <div>
         <ul className="profile-options">
-          <li className="profile-options-element">
-            <Link className="menu-nav-link" to="/posts">My Posts</Link>
+        <li className="profile-options-element">
+            <Link className="menu-nav-link" to="/myself">Myself</Link>
           </li>
           <li className="profile-options-element">
-            <Link className="menu-nav-link" to="/profile">Myself</Link>
+            <Link className="menu-nav-link" to="/myposts">My Posts</Link>
           </li>
           <li className="profile-options-element">
-            <Link className="menu-nav-link" to="/profile">Following</Link>
+            <Link className="menu-nav-link" to="/following">Following</Link>
           </li>
           <li className="profile-options-element">
-            <Link className="menu-nav-link" to="/profile">Followers</Link>
+            <Link className="menu-nav-link" to="/followers">Followers</Link>
           </li>
         </ul>
 
-        {/* <Switch>
-          <Route exact path="/posts">
-            <Posts />
+        <Switch>
+          <Route exact path="/myself">
+            <Myself />
           </Route>
-          <Route path="/profile">
-            <Profile />
+          <Route path="/myposts">
+            <MyPosts />
           </Route>
-        </Switch> */}
+          <Route path="/followers">
+            <Followers />
+          </Route>
+          <Route path="/following">
+            <Following />
+          </Route>
+        </Switch>
     
       </div>
     </Router>
