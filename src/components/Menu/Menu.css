@@ -21,9 +21,8 @@
 }
 
 .menu-nav-link:hover {
-
     background: gray;
-
+    cursor: pointer;
 }
 
 .menu {

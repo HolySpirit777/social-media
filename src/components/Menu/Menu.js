@@ -5,16 +5,36 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  import './Menu.css';
+
+import Profile from '../Profile/Profile';
+import Posts from '../Posts/Posts';
+import './Menu.css';
+
 
 const Menu = () => {
     return (
-        <div className="menu">
-            <ul className="menu-nav">
-                <li className="menu-nav-element"><a className="menu-nav-link" href="#">Posts</a> </li>
-                <li className="menu-nav-element"><a className="menu-nav-link" href="#">Profile</a></li>
-            </ul>
-        </div>
+            <Router>
+      <div className="menu">
+        <ul className="menu-nav">
+          <li className="menu-nav-element">
+            <Link className="menu-nav-link" to="/posts">Posts</Link>
+          </li>
+          <li className="menu-nav-element">
+            <Link className="menu-nav-link" to="/profile">Profile</Link>
+          </li>
+        </ul>
+
+        <Switch>
+          <Route exact path="/posts">
+            <Posts />
+          </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+        </Switch>
+    
+      </div>
+    </Router>
     )
 }
 

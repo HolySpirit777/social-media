@@ -1,0 +1,23 @@
+.profile-tittle {
+    display: inline-block;
+}
+
+.profile-options {
+    display: inline-block;
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.profile-options-element {
+    display: inline-block;
+}
+
+
+.profile-options-element:hover {
+    background: gray;
+}
