@@ -14,11 +14,12 @@ import Following from './Following/Following';
 
 const Profile = (props) => {
     return (
-        <div>
+        <div className="profile">
 
     <Router>
 
         <nav class="nav">
+        <Link to="/contents"><a class="nav-link">Contents</a></Link>
         <Link to="/myself"><a class="nav-link active">Myself</a></Link>
         <Link to="/myposts"><a class="nav-link">My Posts</a></Link>
         <Link to="/following"><a class="nav-link">Following</a></Link>
