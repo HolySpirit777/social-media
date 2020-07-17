@@ -16,24 +16,14 @@ const Profile = (props) => {
     return (
         <div>
 
-            <h1 className="profile-tittle">Profile</h1> 
+    <Router>
 
-            <Router>
-      <div>
-        <ul className="profile-options">
-        <li className="profile-options-element">
-            <Link className="menu-nav-link" to="/myself">Myself</Link>
-          </li>
-          <li className="profile-options-element">
-            <Link className="menu-nav-link" to="/myposts">My Posts</Link>
-          </li>
-          <li className="profile-options-element">
-            <Link className="menu-nav-link" to="/following">Following</Link>
-          </li>
-          <li className="profile-options-element">
-            <Link className="menu-nav-link" to="/followers">Followers</Link>
-          </li>
-        </ul>
+        <nav class="nav">
+        <Link to="/myself"><a class="nav-link active">Myself</a></Link>
+        <Link to="/myposts"><a class="nav-link">My Posts</a></Link>
+        <Link to="/following"><a class="nav-link">Following</a></Link>
+        <Link to="/followers"><a class="nav-link">Followers</a></Link>
+        </nav>
 
         <Switch>
           <Route exact path="/myself">
@@ -50,7 +40,6 @@ const Profile = (props) => {
           </Route>
         </Switch>
     
-      </div>
     </Router>
             
         </div>
