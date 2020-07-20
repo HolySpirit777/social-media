@@ -1,10 +1,11 @@
 import React from 'react';
+import './Following.css';
 
 const Following = (props) => {
     return (
-<div class="card w-50">
+<div class="following card w-50">
   <div class="card-header">
-    Featured
+    Following
   </div>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>

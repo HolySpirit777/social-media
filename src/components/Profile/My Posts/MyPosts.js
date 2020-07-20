@@ -1,10 +1,11 @@
 import React from 'react';
+import './MyPosts.css';
 
 const MyPosts = (props) => {
     return (
-<div class="card w-50">
+<div class="myposts card w-50">
   <div class="card-header">
-    Featured
+    My Posts
   </div>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>

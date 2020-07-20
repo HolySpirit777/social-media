@@ -11,6 +11,7 @@ import Followers from './Followers/Followers';
 import MyPosts from './My Posts/MyPosts';
 import Myself from './Myself/Myself';
 import Following from './Following/Following';
+import Contents from './Contents/Contents';
 
 const Profile = (props) => {
     return (
@@ -27,6 +28,9 @@ const Profile = (props) => {
         </nav>
 
         <Switch>
+        <Route exact path="/contents">
+            <Contents />
+          </Route>
           <Route exact path="/myself">
             <Myself />
           </Route>

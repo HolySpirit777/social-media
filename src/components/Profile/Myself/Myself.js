@@ -4,7 +4,7 @@ import picture from './profile picture.jpg';
 
 const Myself = (props) => {
     return (
-<div class="card w-50">
+<div class="myself card w-50">
   <div class="card-header">
       <img className="myself-picture border border-dark" src={picture} alt="" />
 
