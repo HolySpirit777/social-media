@@ -1,3 +1,17 @@
 .myposts {
     margin: 40px;
 }
+
+.myposts-post {
+    margin: 20px;
+    padding: 30px;
+}
+
+.myposts-post-text {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.myposts-post-input {
+    margin-right: 10px;
+}

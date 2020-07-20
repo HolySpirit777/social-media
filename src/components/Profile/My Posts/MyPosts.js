@@ -8,9 +8,16 @@ const MyPosts = (props) => {
     My Posts
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+  <div class="myposts-post border w-auto input-group input-group-sm w-75">
+
+   <span class="myposts-post-text">Post what you want</span>
+  <input type="text" class="myposts-post-input form-control" />
+  <button type="button" class="btn btn-outline-success btn-sm">Post</button>
   </div>
+
+</div>
+
 </div>
     )
 }
