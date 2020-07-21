@@ -1,5 +1,6 @@
 import React from 'react';
 import './MyPosts.css';
+import axios from 'axios';
 
 const MyPosts = (props) => {
     return (
