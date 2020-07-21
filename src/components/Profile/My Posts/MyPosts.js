@@ -16,6 +16,17 @@ const MyPosts = (props) => {
   <button type="button" class="btn btn-outline-success btn-sm">Post</button>
   </div>
 
+  <div>
+  <div class="card text-center">
+  <div class="card-body">
+    <p class="card-text">Mi vida es mejor hoy que manana</p>
+  </div>
+  <div class="card-footer text-muted">
+    <input className="form-control" placeholder="Write a comment" type="text"/>
+  </div>
+</div>
+  </div>
+
 </div>
 
 </div>

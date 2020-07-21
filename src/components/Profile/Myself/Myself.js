@@ -20,7 +20,11 @@ const Myself = (props) => {
     <p class="card-text">Naci el 12 de Diciembre de 1994, en un barrio llamado Buenos Aires, barrio
     de personas pobres y donde habian delicuentes y todo tipo de personas. Mi vida empieza en ese lugar
     mi vision de la vida se vio en ese ambiente si saber el inmenso mundo que existia el cual era mas
-    diverso y complejo.</p>
+    diverso y complejo. <br/><br/>
+    
+    Despues conoci que el mundo es algo interesante donde los limites te los pones tu y la expresion misma
+    de la complejidad es algo definido en la limitacion.
+    </p>
   </div>
 </div>
     )
