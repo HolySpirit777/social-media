@@ -4,10 +4,23 @@ import axios from 'axios';
 import './Myself.css';
 import picture from './profile picture.jpg';
 
+const instance = axios.create({
+  baseURL: 'http://localhost:5000/api'
+});
+
 const Myself = (props) => {
-    return (
-<div class="myself card w-50">
-  <div class="card-header">
+
+  useEffect(() => {
+    const fetch = async () => {
+      const profile = await instance('/myself/asasfasfasf');
+    }
+
+    fetch();
+  }, []);
+  
+  return (
+<div className="myself card w-50">
+  <div className="card-header">
       <img className="myself-picture border border-dark" src={picture} alt="" />
 
       <div className="myself-descrip">
@@ -17,9 +30,9 @@ const Myself = (props) => {
 
       
   </div>
-  <div class="card-body">
-    <h5 class="card-title">Biography</h5>
-    <p class="card-text">Naci el 12 de Diciembre de 1994, en un barrio llamado Buenos Aires, barrio
+  <div className="card-body">
+    <h5 className="card-title">Biography</h5>
+    <p className="card-text">Naci el 12 de Diciembre de 1994, en un barrio llamado Buenos Aires, barrio
     de personas pobres y donde habian delicuentes y todo tipo de personas. Mi vida empieza en ese lugar
     mi vision de la vida se vio en ese ambiente si saber el inmenso mundo que existia el cual era mas
     diverso y complejo. <br/><br/>

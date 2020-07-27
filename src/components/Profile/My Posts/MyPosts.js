@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import './MyPosts.css';
 import axios from 'axios';
 
+const instance = axios.create({
+  baseURL: 'localhost:27017'
+});
+
 const MyPosts = (props) => {
     return (
 <div class="myposts card w-50">
