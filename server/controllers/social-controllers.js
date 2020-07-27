@@ -71,7 +71,6 @@ getProfile = (req, res) => {
 getMyProfile = (req, res) => {
 
     console.log(req.params.id)
-    const body = req.body;
 
 }
 
