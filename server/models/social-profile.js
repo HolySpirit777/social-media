@@ -7,10 +7,11 @@ var profileSchema = new Schema({
     following: [String],
     followers: [String],
     biography: String,
+    description: String,
     comments: [{ body: String, date: Date }],
     reactions: {
       interested: Number
     }
   });
 
-module.exports = mongoose.model('profile', profileSchema);
+module.exports = mongoose.model('profile', profileSchema, 'profile');

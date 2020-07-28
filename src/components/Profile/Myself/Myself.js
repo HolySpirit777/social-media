@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import './Myself.css';
@@ -10,24 +10,32 @@ const instance = axios.create({
 
 const Myself = (props) => {
 
+  const [data, setData] = useState({});
+
   useEffect(() => {
+
     const fetch = async () => {
-      const profile = await instance('/myself/asasfasfasf');
-    }
+      var profile = await axios.get('http://localhost:5000/api/myself/123ABC');
+      setData(profile.data);
+      console.log(profile.data);
+    };
 
     fetch();
   }, []);
+
+  let Info = (
+  <div className="myself-descrip">
+  <h3>{data.fullName}</h3>
+  <p>{data.description}</p>
+  </div>
+  )
   
   return (
 <div className="myself card w-50">
   <div className="card-header">
       <img className="myself-picture border border-dark" src={picture} alt="" />
 
-      <div className="myself-descrip">
-      <h3>Wilson Junior Toribio Hernandez</h3>
-      <p>Mi vision es cambiar al mundo con DIOS dentro de mi.</p>
-      </div>
-
+        {Info}
       
   </div>
   <div className="card-body">

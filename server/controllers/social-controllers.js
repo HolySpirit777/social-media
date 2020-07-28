@@ -1,6 +1,7 @@
 const Profile = require('../models/social-profile');
 const Posts = require('../models/social-profile-posts');
 
+
 //Post
 
 getAllPosts = (req, res) => {
@@ -70,8 +71,14 @@ getProfile = (req, res) => {
 
 getMyProfile = (req, res) => {
 
-    console.log(req.params.id)
-
+    Profile.findOne({ profileId : req.params.id}, function (err, profile) {
+        if(err) {
+            console.log(err);
+        } else {
+            console.log(profile);
+            res.json(profile);
+        }
+    });
 }
 
 createProfile = (req, res) => {
