@@ -1,0 +1,13 @@
+.post-send {
+    margin-bottom: 20px;
+}
+
+
+.post-send-input {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.post-send-button {
+    display: inline-block;
+}
