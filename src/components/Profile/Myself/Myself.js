@@ -4,10 +4,6 @@ import axios from 'axios';
 import './Myself.css';
 import picture from './profile picture.jpg';
 
-const instance = axios.create({
-  baseURL: 'http://localhost:5000/api'
-});
-
 const Myself = (props) => {
 
   const [data, setData] = useState({});
